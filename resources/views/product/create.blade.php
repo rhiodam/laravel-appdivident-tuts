@@ -1,0 +1,4 @@
+
+@foreach($category)
+    $category
+    @endforeach

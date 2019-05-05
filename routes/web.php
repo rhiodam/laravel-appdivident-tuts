@@ -15,6 +15,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::resource('employees','EmployeeController');
 
-Route::resource('employee','EmployeeController');
+Route::resource('category','CategoryController');
+
+Route::resource('products','ProductController');
+Route::get('category/product/{product}', 'ProductController@removeCategory')->name('category.product.delete');
+
+Route::resource('books', 'BookController');
 
