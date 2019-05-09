@@ -31,4 +31,14 @@ class User extends Authenticatable
     {
         return $this->hasOne('App\Account');
     }
+
+    public function goals()
+    {
+        return $this->hasMany(Goal::class);
+    }
+
+    public function team()
+    {
+        return $this->belongsTo(Team::class);
+    }
 }

@@ -1,0 +1,37 @@
+
+
+
+
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>php artisan make:model Product -mcr
+Model created successfully.
+Created Migration: 2019_05_02_094700_create_products_table
+Controller created successfully.
+
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>
+php artisan make:model Category -mcr
+Model created successfully.
+Created Migration: 2019_05_02_094717_create_categorie
+s_table
+Controller created successfully.
+
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>php artisan make:model CategoryProduct -mcr
+Model created successfully.
+Created Migration: 2019_05_02_094855_create_category_products_table
+Controller created successfully.
+
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>php artisan migrate
+Migrating: 2019_05_02_094700_create_products_table
+Migrated:  2019_05_02_094700_create_products_table
+Migrating: 2019_05_02_094717_create_categories_table
+Migrated:  2019_05_02_094717_create_categories_table
+Migrating: 2019_05_02_094855_create_category_products_table
+Migrated:  2019_05_02_094855_create_category_products_table
+
+
+
+-------------
+
+
+
+
+
