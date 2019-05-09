@@ -24,3 +24,7 @@ Route::get('category/product/{product}', 'ProductController@removeCategory')->na
 
 Route::resource('books', 'BookController');
 
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
