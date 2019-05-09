@@ -31,7 +31,25 @@ Migrated:  2019_05_02_094855_create_category_products_table
 
 -------------
 
+add this to cronjob
+
+* * * * * php /path-to-your-project/artisan schedule:run >> /dev/null 2>&1
+
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>php artisan make:auth
+Authentication scaffolding generated successfully.
+
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>php artisan make:command RegisteredUsers --command=registered:users
+Console command created successfully.
+
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>
+C:\xampp\htdocs\Github\tuts\laravel-appdivident-tuts>php artisan list
+Laravel Framework 5.6.39
 
 
 
 
+
+----------------
+
+add

@@ -42,5 +42,6 @@ class RegisteredUsers extends Command
         $totalUsers = DB::table('users')
             ->whereRaw('Date(created_at) = CURDATE()')
             ->count();
+        Mail::to('dev.smart.skd@gmail.com')->send(new SendMailable($totalUsers));
     }
 }

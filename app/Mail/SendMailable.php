@@ -11,14 +11,17 @@ class SendMailable extends Mailable
 {
     use Queueable, SerializesModels;
 
+    public $count;
+
     /**
      * Create a new message instance.
      *
      * @return void
      */
-    public function __construct()
+    public function __construct($count)
     {
         //
+        $this->count = $count;
     }
 
     /**
@@ -28,6 +31,6 @@ class SendMailable extends Mailable
      */
     public function build()
     {
-        return $this->view('view.name');
+        return $this->view('emails.registeredcount');
     }
 }
